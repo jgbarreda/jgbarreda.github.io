@@ -16,8 +16,8 @@ def prueba(codigo):
 ```
 
 
-Syntax highlighted code block
-
+Ejemplos de Markdown:
+```
 # Header 1
 ## Header 2
 ### Header 3
@@ -31,7 +31,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-
+```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
