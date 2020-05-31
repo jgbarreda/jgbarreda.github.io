@@ -1,18 +1,24 @@
 ## Esto en una página creada con GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/jgbarreda/jgbarreda.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+En el ejemplo de hoy hacemos una función que recibe una lista con las medidas de los paramentos de un local a reformar y la altura de los mismos, y nos devuelve la superficie total. Esta función se podrá integrar mas adelante en nuestra clase Local(), que nos facilitará la realización de las mediciones de los distintos elementos del local. 
 
 ### Markdown
 
 Usamos Markdown para dar estilo a nuestro texto, pero también para escribir código:
 
 ```python
+import numpy as np
+paramentos = [2.35, 1.20, 4.56, 5.67, 9.70, 3.40, 1.40]
+altura_local = 2.70 
+def mide_paramentos(paramentos, altura_local):
+	suma_paramentos=np.around(sum(paramentos), 2)
+	superficie_paramentos = np.around(suma_paramentos*altura_local, 2)
+	return superficie_paramentos
 
-def prueba(codigo):
-  return valor
-  
+# si llamamos a la funcion mide_paramentos y le aportamos los datos necesarios nos devuelve la superficie con 2 decimales
+mide_paramentos(paramentos, altura_local)
+76.36
+
 ```
 
 
